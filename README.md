@@ -20,6 +20,18 @@ Yarn is the package manager of choice for this project. Make sure you are using 
 corepack enable
 ```
 
+Since Vercel does not totally support Yarn 2, make sure your current version `<2.0.0` :
+
+```bash
+yarn -v
+```
+
+If it is not the case, install the latest classic release :
+
+```bash
+yarn set version classic
+```
+
 ### Visual Studio Code
 
 Consistency in TypeScript versions is crucial. For VSCode users, ensure that you [use the workspace version of TypeScript](https://code.visualstudio.com/docs/typescript/typescript-compiling#_using-the-workspace-version-of-typescript) and not the built-in version provided by VSCode.
@@ -66,6 +78,3 @@ $ yarn run dev
 # Production mode
 $ yarn run start
 ```
-
-
-
